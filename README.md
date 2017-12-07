@@ -1,6 +1,6 @@
 ## react-native-root-tips
 
-![screen-shoot](https://github.com/openUmbrella/react-native-root-tips/raw/master/src/example.gif)
+![screen-shoot](https://github.com/openUmbrella/react-native-root-tips/raw/master/example/src/example.gif)
 
 ### Features
 1. Pure javascript solution.

@@ -32,7 +32,7 @@ export default class RootTipsDemo extends Component {
   
   _sampleCustomImage(){
     // you can use local Image and net image
-    Tips.show('Custom Images', { backgroundColor: 'white',textColor:'black',opacity:0.9,image:{uri:'http://www.sucaijishi.com/uploadfile/2015/0210/20150210104952902.gif'}});
+    Tips.show('Custom Images', { backgroundColor: 'white',textColor:'black',opacity:0.9,image:{uri:'https://github.com/openUmbrella/react-native-root-tips/raw/master/example/src/loading1.gif'}});
     
     // local Image
     // Tips.show('Custom Images',{image: require('./src/loading.gif')});
