@@ -14,6 +14,8 @@
 
 react-native-root-toast package's author
 
+#####[如果你恰好也在天朝，请点击这里](http://www.jianshu.com/p/373d81fbf30f)
+
 
 ## Install
 
