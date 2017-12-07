@@ -39,7 +39,7 @@ import Tips from 'react-native-root-tips';
   }
   
   _sampleCustomImage(){
-    // you can use local Image and net image
+    // you can use local Image or net image
     Tips.show('Custom Images', { backgroundColor: 'white',textColor:'black',opacity:0.9,image:{uri:'http://www.sucaijishi.com/uploadfile/2015/0210/20150210104952902.gif'}});
     
     // local Image
