@@ -40,6 +40,7 @@ import Tips from 'react-native-root-tips';
   
   _sampleCustomImage(){
     // you can use local Image or net image
+    // you need to set App Transport Security Settings -> Allow Arbitrary Loads is YES in info.plist
     Tips.show('Custom Images', { backgroundColor: 'white',textColor:'black',opacity:0.9,image:{uri:'http://www.sucaijishi.com/uploadfile/2015/0210/20150210104952902.gif'}});
     
     // local Image
