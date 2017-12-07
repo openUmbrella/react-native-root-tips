@@ -10,11 +10,13 @@
 5. You can custom icon and text and so on
 6. better performance
 
+[如果你恰好也在天朝，请点击这里](http://www.jianshu.com/p/373d81fbf30f)
+
 ### Thanks
 
 react-native-root-toast package's author
 
-#####[如果你恰好也在天朝，请点击这里](http://www.jianshu.com/p/373d81fbf30f)
+
 
 
 ## Install
