@@ -17,6 +17,20 @@ import Tips from 'react-native-root-tips';
 
 export default class RootTipsDemo extends Component {
 
+  constructor(props){
+    super(props);
+    this.state={
+    
+    };
+    //you can set a global default options you like
+    // Tips.setDefaultOptions({
+    //   showLoading: true,
+    //   backgroundColor: 'gray',
+    //   textColor: 'white',
+    // });
+    
+  }
+
   _sampleSimple(){
     Tips.show('hello world!');
   }
@@ -32,10 +46,10 @@ export default class RootTipsDemo extends Component {
   
   _sampleCustomImage(){
     // you can use local Image and net image
-    Tips.show('Custom Images', { backgroundColor: 'white',textColor:'black',opacity:0.9,image:{uri:'https://github.com/openUmbrella/react-native-root-tips/raw/master/example/src/loading1.gif'}});
+    // Tips.show('Custom Images', { backgroundColor: 'white',textColor:'black',opacity:0.9, image:{uri:'https://github.com/openUmbrella/react-native-root-tips/raw/master/example/src/loading1.gif'}});
     
     // local Image
-    // Tips.show('Custom Images',{image: require('./src/loading.gif')});
+    Tips.show('Custom Images',{ backgroundColor: 'white',textColor:'black',opacity:0.9, image: require('./src/loading.gif')});
   }
   _sampleOnlyImage(){
     Tips.show('tips will not show',{showText: false,showLoading:true});

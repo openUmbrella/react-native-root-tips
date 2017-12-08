@@ -17,6 +17,20 @@ import Tips from 'react-native-root-tips';
 
 export default class RootTipsDemo extends Component {
 
+  // 构造函数
+  constructor(props){
+    super(props);
+    this.state={
+    
+    };
+    //you can set a global default options you like
+    // Tips.setDefaultOptions({
+    //   showLoading: true,
+    //   backgroundColor: 'gray',
+    //   textColor: 'white',
+    // });
+  }
+
   _sampleSimple(){
     Tips.show('hello world!');
   }
