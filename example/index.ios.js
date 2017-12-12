@@ -23,16 +23,22 @@ export default class RootTipsDemo extends Component {
     
     };
     //you can set a global default options you like
-    // Tips.setDefaultOptions({
-    //   showLoading: true,
-    //   backgroundColor: 'gray',
-    //   textColor: 'white',
-    // });
+    Tips.setDefaultOptions({
+      showLoading: true,
+      backgroundColor: 'gray',
+      opacity: 0.95,
+      textColor: 'white',
+      imageLoading: require('./src/loading.gif'),
+
+    });
     
   }
 
   _sampleSimple(){
-    Tips.show('hello world!');
+    // Tips.show('hello world!');
+    Tips.showLoading('啊哈哈');
+    // Tips.showInfo('信息信息');
+    // Tips.showWarn('警告警告');
   }
   _sampleDefaultLoading(){
     Tips.show('loading...',{showLoading: true});
