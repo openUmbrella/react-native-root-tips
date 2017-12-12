@@ -24,21 +24,43 @@ export default class RootTipsDemo extends Component {
     };
     //you can set a global default options you like
     Tips.setDefaultOptions({
-      showLoading: true,
-      backgroundColor: 'gray',
+      
+      backgroundColor: 'black',
       opacity: 0.95,
       textColor: 'white',
-      imageLoading: require('./src/loading.gif'),
+      
+      //setting image you like
+      // imageLoading: require('./src/loading.gif'),
+      // imageLoading: require('xxxxxxxxxx'),
+      // imageSuccess: require('xxxxxxxxxx'),
+      // imageFail: require('xxxxxxxxxx'),
+      // imageInfo: require('xxxxxxxxxx'),
+      // imageWarn: require('xxxxxxxxxx'),
 
     });
     
   }
 
+  _convenienceUseage(){
+    // show a loading tips
+    Tips.showLoading('loading...');
+    
+    // show a successful tips
+    // Tips.showSuccess('wow! success');
+    
+    // show a failed tips
+    // Tips.showFail('em...failed');
+
+    // show a Info tips
+    // Tips.showInfo('info tips');
+
+    // show a warning tips
+    // Tips.showWarn('warning');
+  }
+
   _sampleSimple(){
-    // Tips.show('hello world!');
-    Tips.showLoading('啊哈哈');
-    // Tips.showInfo('信息信息');
-    // Tips.showWarn('警告警告');
+    Tips.show('hello world!');
+    
   }
   _sampleDefaultLoading(){
     Tips.show('loading...',{showLoading: true});

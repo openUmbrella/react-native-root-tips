@@ -22,8 +22,21 @@ onShown             | null                     | Function | Callback for toast\`
 onHide              | null                     | Function | Callback for toast\`s hide animation start
 onHidden            | null                     | Function | Callback for toast\`s hide animation end
 
+
+showLoading         | null                     | Function | convenience method,show an Loading tips
+showSuccess         | null                     | Function | convenience method,show an Success tips
+showFail            | null                     | Function | convenience method,show an Fail tips
+showInfo            | null                     | Function | convenience method,show an Info tips
+showWarn            | null                     | Function | convenience method,show an Warn tips
+
+imageLoading        | null                     | Object   | showLoading method custom Image
+imageSuccess        | null                     | Object   | showSuccess method custom Image
+imageFail           | null                     | Object   | showFail method custom Image
+imageInfo           | null                     | Object   | showInfo method custom Image
+imageWarn           | null                     | Object   | showWarn method custom Image
+
 textFont            | 14                       | Number   | text's font
-mask                | false                    | Bool     | If can touch other place when shown
+mask                | false                    | Bool     | If can touch other place when showing
 maskColor           | string                   | Bool     | The mask's color
 maskOpacity         | false                    | Bool     | The mask's opacity
 image               | null                     | Object   | show image icon that you like. notice: if you setting image/showSuccess/showFail/showLoading at once, the priority is descendant

@@ -8,7 +8,9 @@
 3. Lots of custom options for Toast.
 4. You can show/hide Toast by calling api or using Component inside render.
 5. You can custom icon and text and so on
-6. better performance
+6. Provide a global setting default options method: setDefaultOptions
+6. Provide convenience methods: showLoading/showSuccess/showInfo/showWarn
+7. better performance
 
 [如果你恰好也在天朝，请点击这里](http://www.jianshu.com/p/373d81fbf30f)
 
@@ -26,6 +28,56 @@ react-native-root-toast package's author
 
 ## Simple Useage
 
+
+### convenience method usage
+
+now, you can call these methods to show a tips
+
+```
+// show a loading tips
+Tips.showLoading('loading...');
+
+// show a successful tips
+Tips.showSuccess('wow! success');
+
+// show a failed tips
+Tips.showFail('em...failed');
+
+// show a Info tips
+Tips.showInfo('info tips');
+
+// show a warning tips
+Tips.showWarn('warning');
+
+```
+if you don't like the default icons, you can setting them in setDefaultOptions method
+
+```
+//you can set a global default options you like
+Tips.setDefaultOptions({
+    showLoading: true,
+    backgroundColor: 'gray',
+    opacity: 0.95,
+    textColor: 'white',
+    
+    // setting image you like
+    imageLoading: require('xxxxxxxxxx'),
+    imageSuccess: require('xxxxxxxxxx'),
+    imageFail: require('xxxxxxxxxx'),
+    imageInfo: require('xxxxxxxxxx'),
+    imageWarn: require('xxxxxxxxxx'),
+});
+
+```
+or, you want to set a special icon in some places. you can do that:
+
+```
+// example
+Tips.showSuccess('difference icon',{image:require('yyyyyyyyyyy')});
+
+```
+
+### normal usage
 ```
 import Tips from 'react-native-root-tips';
 
@@ -45,7 +97,7 @@ import Tips from 'react-native-root-tips';
   _sampleCustomImage(){
     // you can use local Image or net image
     // you need to set App Transport Security Settings -> Allow Arbitrary Loads is YES in info.plist
-    Tips.show('Custom Images', { backgroundColor: 'white',textColor:'black',opacity:0.9,image:{uri:'http://www.sucaijishi.com/uploadfile/2015/0210/20150210104952902.gif'}});
+    Tips.show('Custom Images', { backgroundColor: 'white',textColor:'black',opacity:0.9,image:{uri:'https://github.com/openUmbrella/react-native-root-tips/raw/master/example/src/loading1.gif'}});
     
     // local Image
     // Tips.show('Custom Images',{image: require('./src/loading.gif')});
@@ -85,6 +137,16 @@ onHidden            | null                     | Function | Callback for toast\`
 ## adding props
 Name                | Default                  |  Type    | Description
 --------------------|--------------------------|----------|---------------------------
+showLoading         | null                     | Function | convenience method,show an Loading tips
+showSuccess         | null                     | Function | convenience method,show an Success tips
+showFail            | null                     | Function | convenience method,show an Fail tips
+showInfo            | null                     | Function | convenience method,show an Info tips
+showWarn            | null                     | Function | convenience method,show an Warn tips
+imageLoading        | null                     | Object   | showLoading method custom Image
+imageSuccess        | null                     | Object   | showSuccess method custom Image
+imageFail       | null                     | Object   | showFail method custom Image
+imageInfo        | null                     | Object   | showInfo method custom Image
+imageWarn        | null                     | Object   | showWarn method custom Image
 textFont            | 14                       | Number     | text's font
 mask                | false                    | Bool     | If can touch other place when shown
 maskColor           | string                   | Bool     | The mask's color
