@@ -1,7 +1,7 @@
 {
   "name": "react-native-root-tips",
-  "version": "0.0.24",
-  "description": "this is react-native-root-toast package improvement",
+  "version": "0.0.26",
+  "description": "very simple and powerful way to show a toast, fork from react-native-root-toast",
   "main": "./index.js",
   "dependencies": {
     "prop-types": "^15.5.10",
