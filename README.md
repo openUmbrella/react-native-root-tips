@@ -35,6 +35,7 @@ now, you can call these methods to show a tips
 
 ```
 // show a loading tips
+// you need call Tips.hide() to make tips disappear
 Tips.showLoading('loading...');
 
 // show a successful tips
@@ -48,6 +49,9 @@ Tips.showInfo('info tips');
 
 // show a warning tips
 Tips.showWarn('warning');
+
+// ** you can call hide() to hide showing tips **
+// Tips.hide();
 
 ```
 if you don't like the default icons, you can setting them in setDefaultOptions method

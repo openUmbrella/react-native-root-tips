@@ -1,6 +1,6 @@
 {
   "name": "react-native-root-tips",
-  "version": "0.0.23",
+  "version": "0.0.24",
   "description": "this is react-native-root-toast package improvement",
   "main": "./index.js",
   "dependencies": {

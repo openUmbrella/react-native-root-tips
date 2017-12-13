@@ -43,6 +43,7 @@ export default class RootTipsDemo extends Component {
 
   _convenienceUseage(){
     // show a loading tips
+    // you need call Tips.hide() to make tips disappear
     Tips.showLoading('loading...');
     
     // show a successful tips
@@ -60,13 +61,9 @@ export default class RootTipsDemo extends Component {
     // ** you can call hide() to hide showing tips **
     // Tips.hide();
   }
-  _sampleHide(){
-    
-  }
 
   _sampleSimple(){
-    Tips.show('hello world!');
-    
+    // Tips.show('hello world!');
   }
   _sampleDefaultLoading(){
     Tips.show('loading...',{showLoading: true});
@@ -119,10 +116,6 @@ export default class RootTipsDemo extends Component {
           <Text style={styles.welcome} onPress={this._sampleMask}>
             Showing with Mask 
           </Text>
-          <Text style={styles.welcome} onPress={this._sampleHide}>
-            hide all tips 
-          </Text>
-
         </View>
       </ScrollView>
     );
