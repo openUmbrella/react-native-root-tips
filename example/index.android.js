@@ -56,6 +56,12 @@ export default class RootTipsDemo extends Component {
 
     // show a warning tips
     // Tips.showWarn('warning');
+
+    // ** you can call hide() to hide showing tips **
+    // Tips.hide();
+  }
+  _sampleHide(){
+    
   }
 
   _sampleSimple(){
@@ -113,7 +119,9 @@ export default class RootTipsDemo extends Component {
           <Text style={styles.welcome} onPress={this._sampleMask}>
             Showing with Mask 
           </Text>
-          
+          <Text style={styles.welcome} onPress={this._sampleHide}>
+            hide all tips 
+          </Text>
 
         </View>
       </ScrollView>
