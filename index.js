@@ -28,6 +28,7 @@ showSuccess         | null                     | Function | conven
 showFail            | null                     | Function | convenience method,show an Fail tips
 showInfo            | null                     | Function | convenience method,show an Info tips
 showWarn            | null                     | Function | convenience method,show an Warn tips
+hide                | null                     | Function | hide showing tips
 
 imageLoading        | null                     | Object   | showLoading method custom Image
 imageSuccess        | null                     | Object   | showSuccess method custom Image

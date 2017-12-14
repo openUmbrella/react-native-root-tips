@@ -1,11 +1,15 @@
 {
   "name": "react-native-root-tips",
   "version": "0.0.26",
-  "description": "very simple and powerful way to show a toast, fork from react-native-root-toast",
+  "description": "very simple and powerful way to show a toast in react-native",
   "main": "./index.js",
   "dependencies": {
     "prop-types": "^15.5.10",
     "react-native-root-siblings": "^2.2.0"
+  },
+  "repository" :
+  { "type" : "git"
+  , "url" : "https://github.com/openUmbrella/react-native-root-tips"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
