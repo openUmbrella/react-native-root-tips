@@ -1,6 +1,6 @@
 {
   "name": "react-native-root-tips",
-  "version": "0.0.26",
+  "version": "1.0.0",
   "description": "very simple and powerful way to show a toast in react-native",
   "main": "./index.js",
   "dependencies": {

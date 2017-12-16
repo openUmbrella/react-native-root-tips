@@ -10,7 +10,7 @@
 5. You can custom icon and text and so on
 6. Provide a global setting default options method: setDefaultOptions
 6. Provide convenience methods: showLoading/showSuccess/showInfo/showWarn
-7. better performance
+7. Better performance
 
 [如果你恰好也在天朝，请点击这里](http://www.jianshu.com/p/373d81fbf30f)
 
