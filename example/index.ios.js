@@ -63,7 +63,7 @@ export default class RootTipsDemo extends Component {
   }
 
   _sampleSimple(){
-    // Tips.show('hello world!');
+    Tips.show('hello world!');
   }
   _sampleDefaultLoading(){
     Tips.show('loading...',{showLoading: true});
