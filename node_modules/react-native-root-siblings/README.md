@@ -1,9 +1,15 @@
-### react-native-root-siblings
+## react-native-root-siblings [![npm version](https://badge.fury.io/js/react-native-root-siblings.svg)](http://badge.fury.io/js/react-native-root-siblings)
 ---
+
+Require react-native version >= 0.47
 
 Add sibling elements after your app root element.
 The created sibling elements are above the rest of your app elements.
 This can be used to create a `Modal` component or something should be over your app.
+
+# BREAKING CHANGE
+From 3.0 the default style has been removed from the element.
+https://github.com/magicismight/react-native-root-siblings/commit/75b1f65502f41a5ecad0d17fd8d6ebb400365928
 
 ### Add it to your project
 
@@ -13,32 +19,38 @@ Run `npm install react-native-root-siblings --save`
 This library can add element above the root app component registered by `AppRegistry.registerComponent`.
 
 1. Create sibling element
-```
+
+```js
 let sibling = new RootSiblings(<View
     style={{top: 0,right: 0,bottom: 0,left: 0,backgroundColor: 'red'}}
 />);
 ```
+
 This will create a View element cover all of your app elements,
 and returns a sibling instance.
 You can create a sibling anywhere inside your react native code.
 
 2. Update sibling element
-```
+
+```js
 sibling.update(<View
     style={{top: 10,right: 10,bottom: 10,left: 10,backgroundColor: 'blue'}}
 />);
 ```
+
 This will update the sibling instance to a View with blue backgroundColor and cover the screen by `10` offset distance.
 
 3. Destroy sibling element
-```
+
+```js
 sibling.destroy();
 ```
+
 This will remove the sibling element.
 
 ### EXAMPLE
 
-```
+```js
 'use strict';
 import React, {
     AppRegistry,
