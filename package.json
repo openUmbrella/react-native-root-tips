@@ -1,15 +1,15 @@
 {
   "name": "react-native-root-tips",
-  "version": "1.0.1",
+  "version": "1.1.2",
   "description": "very simple and powerful way to show a toast in react-native",
   "main": "./index.js",
   "dependencies": {
-    "prop-types": "^15.5.10",
-    "react-native-root-siblings": "^2.2.0"
+    "prop-types": "^15.7.2",
+    "react-native-root-siblings": "^3.2.3"
   },
-  "repository" :
-  { "type" : "git"
-  , "url" : "https://github.com/openUmbrella/react-native-root-tips"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/openUmbrella/react-native-root-tips"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
