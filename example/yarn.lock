@@ -1560,8 +1560,8 @@ express-session@~1.11.3:
     utils-merge "1.0.0"
 
 extend@~3.0.0, extend@~3.0.1:
-  version "3.0.1"
-  resolved "https://registry.npmjs.org/extend/-/extend-3.0.1.tgz#a755ea7bc1adfcc5a31ce7e762dbaadc5e636444"
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/extend/-/extend-3.0.2.tgz#f8b1136b4071fbd8eb140aff858b1019ec2915fa"
 
 external-editor@^2.0.4:
   version "2.1.0"
@@ -3458,9 +3458,9 @@ react-native-root-siblings@^2.2.0:
   dependencies:
     static-container "^1.0.0"
 
-react-native-root-tips@1.0.0:
-  version "1.0.0"
-  resolved "http://registry.npm.taobao.org/react-native-root-tips/download/react-native-root-tips-1.0.0.tgz#6da796891d67ef1a1f196af16762557a05813910"
+react-native-root-tips@1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/react-native-root-tips/-/react-native-root-tips-1.0.1.tgz#7637966bd1797fbb69f18a4a31f9a5ed60fccde1"
   dependencies:
     prop-types "^15.5.10"
     react-native-root-siblings "^2.2.0"
