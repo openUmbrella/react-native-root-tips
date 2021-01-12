@@ -5764,10 +5764,10 @@ react-native-screens@^2.8.0:
   resolved "https://registry.yarnpkg.com/react-native-screens/-/react-native-screens-2.8.0.tgz#9f989096fc5ccf248e0dfa93a74f1a64057e15f1"
   integrity sha512-fUCIQLZX+5XB0ypWX038P3zso54IFFjTsQUZJWEsjC3pp5rPItAt5SzqtJn+uVjcJaczZ+dpIuvj6IFLqkWLZQ==
 
-react-native-webview@^10.1.0:
-  version "10.1.0"
-  resolved "https://registry.yarnpkg.com/react-native-webview/-/react-native-webview-10.1.0.tgz#57ddb199e6f574b5a31196a6343b89f3998b815c"
-  integrity sha512-caoM/sd2bZkcMtU4s6UNAnS1BXHYh0EnGci5iju/uDTWCydfSpK6Lt2GwD9DL4dy9znJXPjSDKcMsnxCB+Lz7g==
+react-native-webview@^11.0.0:
+  version "11.0.0"
+  resolved "https://registry.yarnpkg.com/react-native-webview/-/react-native-webview-11.0.0.tgz#d667cbcc772e963fe88a4156290d25fe47ed43b0"
+  integrity sha512-gzID5ebCFVNkxreuabClymo6QkJbXCLEtiIUY9QAhxY58HsDUp8x0YzDVEROYyEJ4ghL71koAOeQRDNAgNnh1w==
   dependencies:
     escape-string-regexp "2.0.0"
     invariant "2.2.4"
