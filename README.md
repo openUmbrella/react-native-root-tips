@@ -18,12 +18,31 @@
 
 react-native-root-toast package's author
 
-
-
-
 ## Install
 
 `npm install react-native-root-tips --save`
+
+In react native >= 0.62, the new LogBox component would impact this component's initialization. To make it work we have to explicitly insert a mount point in your app like this:
+
+```
+// in your entry file like `App.js`
+
+// In theory you don't have to install `react-native-root-siblings` because it's a dep of root-toast
+// But you can install it explicitly if your editor complains about it.
+import { RootSiblingParent } from 'react-native-root-siblings';
+
+// in your render function 
+return (
+  <RootSiblingParent>  // <- use RootSiblingParent to wrap your root component
+    <App />
+  </RootSiblingParent>
+);
+            
+```
+
+You can skip this step if your react-native is lower than 0.62. And actually you can inject RootSiblingParent into anywhere like a react portal, for example if you have multiple rootviews you can choose where to display the root toast.
+
+Read more about [`react-native-root-siblings`](https://github.com/magicismight/react-native-root-siblings) which powers `react-native-root-toast`.
 
 
 ## Simple Useage
